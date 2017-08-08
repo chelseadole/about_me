@@ -7,7 +7,7 @@ var pointCounter = 0;
 
 var skydivingQuestion = prompt('Okay, time for the first test! Q: Has Chelsea gone skydiving?');
 console.log('skydiving');
-if (skydiving.toLowerCase) = 'yes') {
+if (skydivingQuestion.toLowerCase() = 'yes') {
   alert('You\'re right! Chelsea went skydiving for the first time this week, on Sunday.');
   pointCounter++;
 } else if (skydivingQuestion = 'no') {
@@ -41,10 +41,10 @@ if (boulderingQuestion = 'yes') {
 var madridQuestion = prompt('Bring on question #4! Q: Has Chelsea ever lived in Madrid?');
 console.log('madrid');
 if (madridQuestion = 'yes') {
-  alert('Correcto! Chelsea vivió y estudió en Madrid por 4 meses en 2016. Translation? Correct! Chelsea lived and studied in Madrid for 4 months in 2016.');
+  alert('Correcto! Chelsea vivió y estudió en Madrid por 4 meses en 2016. AKA: Correct! Chelsea lived and studied in Madrid for 4 months in 2016.');
   pointCounter++;
 } else if (madridQuestion = 'no') {
-  alert('Falso! Chelsea vivió y estudió en Madrid por 4 meses en 2016. Translation? False! Chelsea lived and studied in Madrid for 4 months in 2016.');
+  alert('Falso! Chelsea vivió y estudió en Madrid por 4 meses en 2016. AKA: False! Chelsea lived and studied in Madrid for 4 months in 2016.');
 } else {
   alert(errorMessage);
 }
