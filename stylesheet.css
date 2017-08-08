@@ -1,8 +1,17 @@
+body {
+  color: rgb(200, 200, 200);
+  font-family: Verdana;
+}
+
 h1 {
-  color: rgb(210, 24, 117);
-  align-content: center;
+  color: DarkCyan;
+  font-family: Arial;
+  font-size: 60px;
+  align-self: center;
+
 }
 
 h3 {
-  color: rgb(166, 12, 89);
+  color: #ee3e80;
+  font-family: Verdana;
 }
