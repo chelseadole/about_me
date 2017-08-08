@@ -1,6 +1,6 @@
 'use strict';
 
-prompt('Welcome to the Chelsea\'s CF Guessing Game! Today you\'re going to learn more about the human who made me, a humble website. Her name is Chelsea Fay Dole, and she\'s done some cool stuff in her life. That said, there\'s still a lot of sweet stuff to get to! Try to guess which things she has done, and which I made up. Have fun!');
+alert('Welcome to the Chelsea\'s CF Guessing Game! Today you\'re going to learn more about the human who made me, a humble website. Her name is Chelsea Fay Dole, and she\'s done some cool stuff in her life. That said, there\'s still a lot of sweet stuff to get to! Try to guess which things she has done, and which I made up. Have fun!');
 
 var errorMessage = 'Hey! No fair, that\'s not a valid answer. You have to enter True, False, T, or F.';
 var pointCounter = 0;
