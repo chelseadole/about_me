@@ -5,10 +5,8 @@ body {
 
 h1 {
   color: DarkCyan;
-  font-family: Arial;
-  font-size: 60px;
-  align-self: center;
-
+  font-family: "Lobster", serif;
+  font-size: 48px;
 }
 
 h3 {
