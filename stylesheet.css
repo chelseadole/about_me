@@ -6,10 +6,11 @@ body {
 h1 {
   color: DarkCyan;
   font-family: "Lobster", serif;
-  font-size: 48px;
+  font-size: 50px;
 }
 
 h3 {
-  color: #ee3e80;
-  font-family: Verdana;
+  color: #948C8C;
+  font-family: Arial;
+  font-size: 22px;
 }
