@@ -1,16 +1,16 @@
 'use strict';
 
-alert('Welcome to the Chelsea\'s CF Guessing Game! Today you\'re going to learn more about the human who made me, a humble website. Her name is Chelsea Dole. Try to guess which things she has done, and which I made up. Have fun!');
+alert('Welcome to the Chelsea\'s CF Guessing Game! Today we discover how much you know about Chelsea Dole, the human who made me, a humble website. Remember to respond with either "Yes" or No"!');
 
-var errorMessage = 'Hey! No fair, that\'s not a valid answer. You have to enter True, False, T, or F.';
+var errorMessage = 'Hey! No fair, that\'s not a valid answer. You have to enter "Yes" or "No".';
 var pointCounter = 0;
 
 var skydivingQuestion = prompt('Okay, time for the first test! Q: Has Chelsea gone skydiving?');
 console.log('skydiving');
-if (skydivingQuestion = 'True' || 'T') {
+if (skydiving.toLowerCase) = 'yes') {
   alert('You\'re right! Chelsea went skydiving for the first time this week, on Sunday.');
   pointCounter++;
-} else if (skydivingQuestion = 'False' || 'F') {
+} else if (skydivingQuestion = 'no') {
   alert('ERRRRRRT! Incorrect. Chelsea went skydiving for the first time this week, on Sunday.');
 } else {
   alert(errorMessage);
@@ -18,9 +18,9 @@ if (skydivingQuestion = 'True' || 'T') {
 
 var cambodiaQuestion = prompt('Next question. Q: Has Chelsea been hiking in Cambodia?');
 console.log('cambodia');
-if (cambodiaQuestion = 'True' || 'T') {
+if (cambodiaQuestion = 'yes') {
   alert('Wrong! To Chelsea\'s great dismay, she has never been hiking in Cambodia. Someday!');
-} else if (cambodiaQuestion = 'False' || 'F') {
+} else if (cambodiaQuestion = 'no') {
   alert('Nice job, you\'re correct! Chelsea has not been hiking in Cambodia.');
   pointCounter++;
 } else {
@@ -29,33 +29,33 @@ if (cambodiaQuestion = 'True' || 'T') {
 
 var bolderingQuestion = prompt('You\'re halfway there! Q: Has Chelsea ever gone bouldering in the Cascades?');
 console.log('bouldering');
-if (boulderingQuestion = 'True' || 'T') {
+if (boulderingQuestion = 'yes') {
   alert('Nuh-uh. Chelsea also hasn\'t been bouldering in the Cascades... man, maybe her life isn\'t very interesting after all. :/');
-} else if (boulderingQuestion = 'False' || 'F') {
+} else if (boulderingQuestion = 'no') {
   alert('Sweet, you\'re right! Well, sweet for YOU at least. Not so sweet? The fact that Chelsea has yet to boulder in the Cascades...');
   pointCounter++;
 } else {
   alert(errorMessage);
 }
 
-var lotrQuestion = prompt('Home stretch, this is the last question! Q: Has Chelsea read "The Silmarillion"?');
-console.log('lotr');
-if (lotrQuestion = 'True' || 'T') {
-  alert('Awesome job, you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion.""');
+var madridQuestion = prompt('Bring on question #4! Q: Has Chelsea ever lived in Madrid?');
+console.log('madrid');
+if (madridQuestion = 'yes') {
+  alert('Correcto! Chelsea vivió y estudió en Madrid por 4 meses en 2016. Translation? Correct! Chelsea lived and studied in Madrid for 4 months in 2016.');
   pointCounter++;
-} else if (lotrQuestion = 'False' || 'F') {
-  alert('Nope :/ Chelsea is actually a big \'ol Lord of the Rings nerd, and has read "The Silmarillion.""');
+} else if (madridQuestion = 'no') {
+  alert('Falso! Chelsea vivió y estudió en Madrid por 4 meses en 2016. Translation? False! Chelsea lived and studied in Madrid for 4 months in 2016.');
 } else {
   alert(errorMessage);
 }
 
-var madridQuestion = prompt('Bring on question #4! Q: Has Chelsea ever lived in Madrid?');
-console.log('madrid');
-if (madridQuestion = 'True' || 'T') {
-  alert('Correcto! Chelsea vivió y estudió en Madrid por 4 meses en 2016. Translation? Correct! Chelsea lived and studied in Madrid for 4 months in 2016.');
+var lotrQuestion = prompt('Home stretch, this is the last question! Q: Has Chelsea read "The Silmarillion"?');
+console.log('lotr');
+if (lotrQuestion = 'yes') {
+  alert('Awesome job, you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion.""');
   pointCounter++;
-} else if (madridQuestion = 'False' || 'F') {
-  alert('Falso! Chelsea vivió y estudió en Madrid por 4 meses en 2016. Translation? False! Chelsea lived and studied in Madrid for 4 months in 2016.');
+} else if (lotrQuestion = 'no') {
+  alert('Nope :/ Chelsea is actually a big \'ol Lord of the Rings nerd, and has read "The Silmarillion.""');
 } else {
   alert(errorMessage);
 }
