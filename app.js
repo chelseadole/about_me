@@ -1,6 +1,6 @@
 'use strict';
 
-alert('Welcome to the Chelsea\'s CF Guessing Game! Today you\'re going to learn more about the human who made me, a humble website. Her name is Chelsea Fay Dole, and she\'s done some cool stuff in her life. That said, there\'s still a lot of sweet stuff to get to! Try to guess which things she has done, and which I made up. Have fun!');
+alert('Welcome to the Chelsea\'s CF Guessing Game! Today you\'re going to learn more about the human who made me, a humble website. Her name is Chelsea Dole. Try to guess which things she has done, and which I made up. Have fun!');
 
 var errorMessage = 'Hey! No fair, that\'s not a valid answer. You have to enter True, False, T, or F.';
 var pointCounter = 0;
@@ -38,6 +38,17 @@ if (boulderingQuestion = 'True' || 'T') {
   alert(errorMessage);
 }
 
+var lotrQuestion = prompt('Home stretch, this is the last question! Q: Has Chelsea read "The Silmarillion"?');
+console.log('lotr');
+if (lotrQuestion = 'True' || 'T') {
+  alert('Awesome job, you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion.""');
+  pointCounter++;
+} else if (lotrQuestion = 'False' || 'F') {
+  alert('Nope :/ Chelsea is actually a big \'ol Lord of the Rings nerd, and has read "The Silmarillion.""');
+} else {
+  alert(errorMessage);
+}
+
 var madridQuestion = prompt('Bring on question #4! Q: Has Chelsea ever lived in Madrid?');
 console.log('madrid');
 if (madridQuestion = 'True' || 'T') {
@@ -47,15 +58,6 @@ if (madridQuestion = 'True' || 'T') {
   alert('Falso! Chelsea vivió y estudió en Madrid por 4 meses en 2016. Translation? False! Chelsea lived and studied in Madrid for 4 months in 2016.');
 } else {
   alert(errorMessage);
-}
-
-var lotrQuestion = prompt('Home stretch, this is the last question! Q: Has Chelsea read "The Silmarillion"?');
-console.log('lotr');
-if (lotrQuestion = 'True' || 'T') {
-  alert('Awesome job, you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion.""');
-  pointCounter++;
-} else if (lotrQuestion = 'False' || 'F') {
-  alert('Nope :/ Chelsea is actually a big \'ol Lord of the Rings nerd, and has read "The Silmarillion.""');
 }
 
 //FINAL TALLY
