@@ -1,11 +1,13 @@
 'use strict';
 
-alert('Welcome to the Chelsea\'s CF Guessing Game! Today we discover how much you know about Chelsea Dole, the human who made me, a humble website. Remember to respond with either "Yes" or No"!');
+alert('Welcome to Chelsea Dole\'s \"About Me\" page. We\'re going to kick things off with a fun guessing game, so you can learn more about me. Remember to respond with either "Yes" or No," and have fun!');
 
-var errorMessage = 'Hey! No fair, that\'s not a valid answer. You have to enter "Yes" or "No".';
+var errorMessage = 'Hey! No fair, that\'s not a valid answer. Please enter "Yes" or "No".';
 var pointCounter = 0;
 
-var skydivingQuestion = prompt('Okay, time for the first test! Q: Has Chelsea gone skydiving?').toLowerCase();
+var guestName = prompt('First things first: What is your name?');
+
+var skydivingQuestion = prompt('Okay, ' + guestName + '. Time for the first test! Q: Has Chelsea gone skydiving?').toLowerCase();
 console.log('skydiving');
 if (skydivingQuestion == 'yes') {
   alert('You\'re right! Chelsea went skydiving for the first time this week, on Sunday.');
@@ -16,7 +18,7 @@ if (skydivingQuestion == 'yes') {
   alert(errorMessage);
 }
 
-var cambodiaQuestion = prompt('Next question. Q: Has Chelsea been hiking in Cambodia?').toLowerCase();
+var cambodiaQuestion = prompt('Q: Has Chelsea been hiking in Cambodia?').toLowerCase();
 console.log('cambodia');
 if (cambodiaQuestion == 'yes') {
   alert('Wrong! To Chelsea\'s great dismay, she has never been hiking in Cambodia.');
@@ -27,7 +29,7 @@ if (cambodiaQuestion == 'yes') {
   alert(errorMessage);
 }
 
-var boulderingQuestion = prompt('You\'re halfway there! Q: Has Chelsea ever gone bouldering in the Cascades?').toLowerCase();
+var boulderingQuestion = prompt('Q: Has Chelsea ever gone bouldering in the Cascades?').toLowerCase();
 console.log('bouldering');
 if (boulderingQuestion == 'yes') {
   alert('Nuh-uh. Chelsea also hasn\'t been bouldering in the Cascades... man, maybe her life isn\'t very interesting after all. :/');
@@ -38,7 +40,7 @@ if (boulderingQuestion == 'yes') {
   alert(errorMessage);
 }
 
-var madridQuestion = prompt('Bring on question #4! Q: Has Chelsea ever lived in Madrid?').toLowerCase();
+var madridQuestion = prompt('Q: Has Chelsea ever lived in Madrid?').toLowerCase();
 console.log('madrid');
 if (madridQuestion == 'yes') {
   alert('Correcto! Chelsea vivió y estudió en Madrid por 4 meses en 2016. AKA: Correct! Chelsea lived and studied in Madrid for 4 months in 2016.');
@@ -55,7 +57,7 @@ if (lotrQuestion == 'yes') {
   alert('Awesome job, you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion.""');
   pointCounter++;
 } else if (lotrQuestion == 'no') {
-  alert('Nope :/ Chelsea is actually a big \'ol Lord of the Rings nerd, and has read "The Silmarillion.""');
+  alert('Nope :/ Chelsea is actually a big \'ol Lord of the Rings nerd, and has read "The Silmarillion."');
 } else {
   alert(errorMessage);
 }
