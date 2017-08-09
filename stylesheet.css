@@ -6,7 +6,8 @@ body {
 h1 {
   color: DarkCyan;
   font-family: "Lobster", serif;
-  font-size: 50px;
+  font-size: 100px;
+  text-align: center;
 }
 
 h3 {
