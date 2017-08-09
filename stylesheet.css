@@ -1,13 +1,13 @@
-body {
-  color: rgb(200, 200, 200);
-  font-family: Verdana;
-}
-
 h1 {
   color: DarkCyan;
   font-family: "Lobster", serif;
   font-size: 100px;
   text-align: center;
+}
+
+body {
+  color: rgb(200, 200, 200);
+  font-family: Verdana;
 }
 
 h3 {
