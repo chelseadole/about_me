@@ -66,10 +66,11 @@ var birthyearAttemptsRemaining = 3;
 var birthyearQuestion = prompt('What year was Chelsea born?');
 while (birthyearAttemptsRemaining>=0) {
   if (birthyearQuestion == 1995) {
+    pointCounter++;
     alert('Correct! Chelsea was born in 1995.');
-} else if (birthyearQuestion<1995)
+} else if (birthyearQuestion<1995) {
     alert('Nope! Try a higher number. You have ' + birthyearAttemptsRemaining + ' tries remaining.');
-} else if (birthyearQuestion<1995)
+} else if (birthyearQuestion>1995) {
     alert('Nope! Try a lower number. You have ' + birthyearAttemptsRemaining + ' tries remaining.');
 } else {
     alert(errorMessage);
@@ -77,35 +78,30 @@ while (birthyearAttemptsRemaining>=0) {
 
 var favPotterCharacters = [Hermione, Remus, Sirius, Dumbledore];
 var potterQuestion = prompt('Last question! Q: Can you guess one of Chelsea\'s favorite Harry Potter characters?');
-for (i=6; i  )
-  if (potterQuestion in favPotterCharacters) {
+for (i=6; i>=0;i--) {
+  if (favPotterCharacters.contains(potterQuestion)) {
+    pointCounter++;
+    alert('Nice job! Chelsea\'s favorite HP characters are Hermione, Remus, Sirius, and Dumbledore.');
+} else {
     alert('No, ' + potterQuestion + ' isn\'t one of her favorites. You have ' + i + 'attempts remaining.');
-} else
-
-if (siblingsQuestion==2) {
-  alert('Correct! Chelsea has 2 siblings — Tucker and Danielle.');
-} else if (siblingsQuestion!==2 && siblingAttemptsRemaining<0) {
-  alert('No')
 }
-
-}
-
-}
-console.log('siblings');
-if (siblingsQuestion)
 
 //FINAL TALLY
 
-if (pointCounter == 5) {
-  alert('Wow, amazing! You got 100%, 5 of 5 questions correct! Is this Chelsea taking this quiz...?');
+if (pointCounter == 7) {
+  alert('Wow, amazing! You got 100%, 7 of 7 questions correct. Is this Chelsea taking this quiz...?');
+} else if (pointCounter == 6) {
+  alert('Great job! You got 6/7 questions correct.')
+} else if (pointCounter == 5) {
+  alert('Sweet, you got 5/7 questions correct! Is this Chelsea taking this quiz...?');
 } else if (pointCounter == 4) {
-  alert('Nice job, you got 80%, 4 of 5 questions correct! You know Chelsea really well. :)');
+  alert('Nice job, you got 4/7 questions correct! You know Chelsea really well. :)');
 } else if (pointCounter == 3) {
-  alert('Not bad, you got 60%, 3 of 5 questions correct! You could use a little work, but I\'d say that\'s a pass.');
+  alert('Not bad, you got 3/7 questions correct! You could use a little work, but I\'d say that\'s a pass.');
 } else if (pointCounter == 2) {
-  alert('Eh, you could benefit from more conversations with Chelsea. You got 40%, 2 of 5 questions correct. :/');
+  alert('Eh, you could benefit from more conversations with Chelsea. You got 2/7 questions correct. :/');
 } else if (pointCounter == 1) {
-  alert('GodDAMN, that is one bad score. You got 20%, 1 of 5 questions correct. Are you sure you\'ve met Chelsea!?');
+  alert('You got 1/7 questions correct. Are you sure you\'ve met Chelsea!?');
 } else {
-  alert('Dude. Did you even try? You got 0%, 0 of 5 quesitons correct. Now that\'s just sad. Try again?');
+  alert('Ouch, you got 0/7 questions correct. Refresh and try again?');
 }
