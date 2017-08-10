@@ -9,7 +9,7 @@ var pointCounter = 0;
 var guestName = prompt('First things first: What is your name?');
 
 var skydivingQuestion = prompt('Okay, ' + guestName + '. Time for the first test! Q: Has Chelsea gone skydiving?').toLowerCase();
-console.log('Okay, ' + guestName + '. Time for the first test! Q: Has Chelsea gone skydiving?');
+console.log(skydivingQuestion);
 if (skydivingQuestion === 'yes') {
   alert('You\'re right! Chelsea went skydiving for the first time this week, on Sunday.');
   pointCounter++;
@@ -20,7 +20,7 @@ if (skydivingQuestion === 'yes') {
 }
 
 var cambodiaQuestion = prompt('Q: Has Chelsea been hiking in Cambodia?').toLowerCase();
-console.log('Q: Has Chelsea been hiking in Cambodia?');
+console.log(cambodiaQuestion);
 if (cambodiaQuestion === 'yes') {
   alert('Wrong! To Chelsea\'s great dismay, she has never been hiking in Cambodia.');
 } else if (cambodiaQuestion === 'no') {
@@ -31,7 +31,7 @@ if (cambodiaQuestion === 'yes') {
 }
 
 var boulderingQuestion = prompt('Q: Has Chelsea ever gone bouldering in the Cascades?').toLowerCase();
-console.log('Q: Has Chelsea ever gone bouldering in the Cascades?');
+console.log(boulderingQuestion);
 if (boulderingQuestion === 'yes') {
   alert('Nuh-uh. Chelsea also hasn\'t been bouldering in the Cascades... man, maybe her life isn\'t very interesting after all. :/');
 } else if (boulderingQuestion === 'no') {
@@ -42,7 +42,7 @@ if (boulderingQuestion === 'yes') {
 }
 
 var madridQuestion = prompt('Q: Has Chelsea ever lived in Madrid?').toLowerCase();
-console.log('Q: Has Chelsea ever lived in Madrid?');
+console.log(madridQuestion);
 if (madridQuestion === 'yes') {
   alert('Correcto! Chelsea vivió y estudió en Madrid por 4 meses en 2016. AKA: Correct! Chelsea lived and studied in Madrid for 4 months in 2016.');
   pointCounter++;
@@ -53,9 +53,9 @@ if (madridQuestion === 'yes') {
 }
 
 var lotrQuestion = prompt('Q: Has Chelsea read "The Silmarillion"?').toLowerCase();
-console.log('Q: Has Chelsea read "The Silmarillion"?');
+console.log(lotrQuestion);
 if (lotrQuestion === 'yes') {
-  alert('Awesome job, you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion.""');
+  alert('Awesome job, you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion."');
   pointCounter++;
 } else if (lotrQuestion === 'no') {
   alert('Nope :/ Chelsea is actually a big ol\' Lord of the Rings nerd, and has read "The Silmarillion."');
@@ -65,8 +65,8 @@ if (lotrQuestion === 'yes') {
 
 var birthyearAttemptsRemaining = 3;
 while (birthyearAttemptsRemaining >= 0) {
-  console.log('Q: Has Chelsea read "The Silmarillion"?');
   var birthyearQuestion = prompt('What year was Chelsea born?');
+  console.log(birthyearQuestion);
   if (parseInt(birthyearQuestion) === 1995) {
     pointCounter++;
     alert('Correct! Chelsea was born in 1995.');
@@ -84,12 +84,13 @@ while (birthyearAttemptsRemaining >= 0) {
 }
 
 var favPotterCharacters = ['hermione', 'remus', 'sirius', 'dumbledore'];
+var printPotter = favPotterCharacters.join(', ');
 for (var i = 6; i >= 0;i--) {
   var potterQuestion = prompt('Last question! Q: Can you guess one of Chelsea\'s favorite Harry Potter characters?');
-  console.log('Last question! Q: Can you guess one of Chelsea\'s favorite Harry Potter characters?');
+  console.log(potterQuestion);
   if (favPotterCharacters.includes(potterQuestion.toLowerCase())) {
     pointCounter++;
-    alert('Nice job! Chelsea\'s favorite HP characters are Hermione, Remus, Sirius, and Dumbledore.');
+    alert('Nice job! Chelsea\'s favorite HP characters are ' + printPotter + '.');
     break;
   } else {
     alert('No, ' + potterQuestion + ' isn\'t one of her favorites. You have ' + i + ' attempts remaining.');
@@ -98,20 +99,4 @@ for (var i = 6; i >= 0;i--) {
 
 //FINAL TALLY
 
-if (pointCounter === 7) {
-  alert('Wow, amazing, ' + guestName + '! You got 100%, 7 of 7 questions correct. Is this Chelsea taking this quiz...?');
-} else if (pointCounter === 6) {
-  alert('Great job, ' + guestName + '! You got 6/7 questions correct.');
-} else if (pointCounter === 5) {
-  alert('Sweet, ' + guestName + '! You got 5/7 questions correct!');
-} else if (pointCounter === 4) {
-  alert('Nice job, ' + guestName + '! You got 4/7 questions correct. :)');
-} else if (pointCounter === 3) {
-  alert('Not bad, ' + guestName + '! You got 3/7 questions correct.');
-} else if (pointCounter === 2) {
-  alert('Eh, you could benefit from more conversations with Chelsea, ' + guestName + '. You got 2/7 questions correct. :/');
-} else if (pointCounter === 1) {
-  alert('Dang, ' + guestName + '. You got just 1/7 questions correct.');
-} else {
-  alert('Ouch, ' + guestName + '. You got 0/7 questions correct.');
-}
+alert('Thanks so much for playing! You got ' + pointCounter + '/7 answers correct.');
