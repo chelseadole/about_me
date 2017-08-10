@@ -35,6 +35,10 @@ body {
   background: #D8D6D6;
 }
 
+li {
+  color: gray;
+}
+
 h2 {
   text-align: center;
   color: burlywood;
@@ -45,9 +49,14 @@ h2 {
 }
 
 h3 {
-  color: #737171;
+  color: DarkCyan;
   margin-left: 12px;
   font-family: Arial;
   font-size: 22px;
+}
 
+footer {
+  color: gray;
+  margin: 30;
+  text-align: center;
 }
