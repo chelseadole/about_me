@@ -1,5 +1,5 @@
 # about_me
-Chelsea Dole, About Me page
+Chelsea Dole, "About Me" page
 
 This project is a portfolio web site about me, my work, and my background.
 It is designed to illustrate my web development skills by using a quiz in JS and HTML, CSS design.
