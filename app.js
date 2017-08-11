@@ -13,11 +13,11 @@ function skyDiving() {
   console.log('Okay, ' + guestName + '. Time for the first test! Q: Has Chelsea gone skydiving?');
   if (skydivingQuestion === 'yes') {
     alert('You\'re right! Chelsea went skydiving for the first time this week, on Sunday.');
-    console.log('A: Correct, Chelsea has been skydiving.')
+    console.log('A: Correct, Chelsea has been skydiving.');
     pointCounter++;
   } else if (skydivingQuestion === 'no') {
     alert('ERRRRRRT! Incorrect. Chelsea went skydiving for the first time this week, on Sunday.');
-    console.log('Incorrect, Chelsea has been skydiving.')
+    console.log('Incorrect, Chelsea has been skydiving.');
   } else {
     alert(errorMessage);
   }
@@ -29,10 +29,10 @@ function cambodia() {
   console.log('Q: Has Chelsea been hiking in Cambodia?');
   if (cambodiaQuestion === 'yes') {
     console.log('Incorrect. Chelsea has never been hiking in Cambodia.');
-    alert('Wrong! To Chelsea\'s great dismay, she has never been hiking in Cambodia.');
+    alert('Not quite, ' + guestName + '. To Chelsea\'s great dismay, she has never been hiking in Cambodia.');
   } else if (cambodiaQuestion === 'no') {
     console.log('Correct! Chelsea has not been hiking in Cambodia.');
-    alert('Nice job, you\'re correct! Chelsea has not been hiking in Cambodia.');
+    alert('Nice job, ' + guestName + ' you\'re correct! Chelsea has not been hiking in Cambodia.');
     pointCounter++;
   } else {
     alert(errorMessage);
@@ -45,10 +45,10 @@ function bouldering() {
   console.log('Q: Has Chelsea ever gone bouldering in the Cascades?');
   if (boulderingQuestion === 'yes') {
     console.log('Incorrect. Chelsea has not been bouldering in the Cascades.');
-    alert('Nuh-uh. Chelsea also hasn\'t been bouldering in the Cascades... man, maybe her life isn\'t very interesting after all. :/');
+    alert('Nuh-uh, ' + guestName + '. Chelsea also hasn\'t been bouldering in the Cascades... man, maybe her life isn\'t very interesting after all. :/');
   } else if (boulderingQuestion === 'no') {
     console.log('Correct. Chelsea has not been bouldering in the Cascades.');
-    alert('Sweet, you\'re right! Well, sweet for YOU at least. Not so sweet? The fact that Chelsea has yet to boulder in the Cascades...');
+    alert('Sweet, you\'re right, ' + guestName + '! Well, sweet for YOU at least. Not so sweet? The fact that Chelsea has yet to boulder in the Cascades...');
     pointCounter++;
   } else {
     alert(errorMessage);
@@ -61,11 +61,11 @@ function madrid() {
   console.log('Q: Has Chelsea ever lived in Madrid?');
   if (madridQuestion === 'yes') {
     console.log('Correct! Chelsea has lived in Madrid.');
-    alert('Correcto! Chelsea vivió y estudió en Madrid por 4 meses en 2016. AKA: Correct! Chelsea lived and studied in Madrid for 4 months in 2016.');
+    alert('Correcto, ' + guestName + '! Chelsea vivió y estudió en Madrid por 4 meses en 2016. AKA: Correct! Chelsea lived and studied in Madrid for 4 months in 2016.');
     pointCounter++;
   } else if (madridQuestion === 'no') {
     console.log('Incorrect. Chelsea has lived in Madrid.');
-    alert('Falso! Chelsea vivió y estudió en Madrid por 4 meses en 2016. AKA: False! Chelsea lived and studied in Madrid for 4 months in 2016.');
+    alert('Falso, ' + guestName + '. Chelsea vivió y estudió en Madrid por 4 meses en 2016. AKA: False! Chelsea lived and studied in Madrid for 4 months in 2016.');
   } else {
     alert(errorMessage);
   }
@@ -77,11 +77,11 @@ function lotr() {
   console.log('Q: Has Chelsea read "The Silmarillion"?');
   if (lotrQuestion === 'yes') {
     console.log('Correct! Chelsea has read "The Silmarillion."');
-    alert('Awesome job, you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion.""');
+    alert('Awesome job, ' + guestName + '. you\'re right! Chelsea is an enormous Lord of the Rings nerd, and has read "The Silmarillion.""');
     pointCounter++;
   } else if (lotrQuestion === 'no') {
     console.log('Incorrect. Chelsea has read "The Silmarillion."');
-    alert('Nope :/ Chelsea is actually a big ol\' Lord of the Rings nerd, and has read "The Silmarillion."');
+    alert('Not quite,' + guestName + '. Chelsea is actually a big ol\' Lord of the Rings nerd, and has read "The Silmarillion."');
   } else {
     alert(errorMessage);
   }
@@ -96,15 +96,15 @@ function birthYear() {
     if (parseInt(birthyearQuestion) === 1995) {
       pointCounter++;
       console.log('Correct! Chelsea was born in 1995.');
-      alert('Correct! Chelsea was born in 1995.');
+      alert('Nice job, ' + guestName + '! Chelsea was born in 1995.');
       break;
     } else if (parseInt(birthyearQuestion) < 1995) {
       console.log('Incorrect. Chelsea was born in 1995.');
-      alert('Nope! Try a higher number. You have ' + birthyearAttemptsRemaining + ' tries remaining.');
+      alert('Almost, ' + guestName + '! Try a higher number. You have ' + birthyearAttemptsRemaining + ' tries remaining.');
       birthyearAttemptsRemaining--;
     } else if (parseInt(birthyearQuestion) > 1995) {
       console.log('Incorrect. Chelsea was born in 1995.');
-      alert('Nope! Try a lower number. You have ' + birthyearAttemptsRemaining + ' tries remaining.');
+      alert('Nope, ' + guestName + '! Try a lower number. You have ' + birthyearAttemptsRemaining + ' tries remaining.');
       birthyearAttemptsRemaining--;
     } else {
       alert(errorMessageNum);
@@ -122,11 +122,11 @@ function potterCharacters() {
     if (favPotterCharacters.includes(potterQuestion.toLowerCase())) {
       pointCounter++;
       console.log('Correct. Chelsea likes Hermione, Remus, Sirius, and Dumbledore.');
-      alert('Nice job! Chelsea\'s favorite HP characters are Hermione, Remus, Sirius, and Dumbledore.');
+      alert('Nice job, ' + guestName + '! Chelsea\'s favorite HP characters are Hermione, Remus, Sirius, and Dumbledore.');
       break;
     } else {
       console.log('Incorrect. Chelsea likes Hermione, Remus, Sirius, and Dumbledore.');
-      alert('No, ' + potterQuestion + ' isn\'t one of her favorites. You have ' + i + ' attempts remaining.');
+      alert('Nope, ' + guestName + '. ' + potterQuestion + ' isn\'t one of her favorites. You have ' + i + ' attempts remaining.');
     }
   }
 }
