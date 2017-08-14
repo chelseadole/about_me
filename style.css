@@ -11,6 +11,12 @@
   justify-content: center;
 }
 
+.topNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #mountains {
   height: 50%;
   width: 100%;
@@ -28,6 +34,48 @@ h1 {
   position: absolute;
 }
 
+h2 {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  margin-top: 21%;
+  color: burlywood;
+  text-align: center;
+  font-family: Verdana;
+}
+
+.headshot {
+  float: right;
+  padding: 30px;
+  padding-right: 200px;
+}
+
+nav ul {
+  width: 130px;
+  list-style-type: none;
+  background-color: rgba(43, 154, 154, 0.41);
+  font-family: Verdana;
+  font-size: 18px;
+  float: left;
+  z-index: 1;
+  margin-top: 0;
+  padding: 10px 0px 10px 0px;
+  border-radius: 0% 0% 20% 0%;
+  text-align: center;
+}
+
+nav li a {
+  color: cornsilk;
+  display: block;
+  text-decoration: none;
+
+}
+
+nav li a:hover {
+  background-color: rgba(10, 103, 103, 0.84);
+  color: white;
+}
+
 body {
   color: rgb(200, 200, 200);
   font-family: Verdana;
@@ -36,16 +84,7 @@ body {
 }
 
 li {
-  color: gray;
-}
-
-h2 {
-  text-align: center;
-  color: burlywood;
-  margin: 0;
-  margin-top: 21%;
-  position: absolute;
-  text-align: center;
+  color: grey;
 }
 
 h3 {
